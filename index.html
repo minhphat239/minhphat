@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Minh Phát — just a normal high school student.">
+  <title>Minh Phát</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-brand" aria-label="Home">
+          <span class="brand-logo">M</span>
+          <span class="brand-name">Minh Phát</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#stuff" class="nav-link">Stuff I do</a>
+          <a href="#tinkering" class="nav-link">Tinkering</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <a href="#contact" class="nav-btn">Say hi</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container">
+
+        <div class="status-badge animated">
+          <span class="status-dot" aria-hidden="true"></span>
+          Grade 11 student
+        </div>
+
+        <h1 class="hero-heading animated">
+          <span class="hero-line">Hi, I'm <span class="text-gradient" id="typewriter-name"></span><span class="cursor-blink">|</span></span>
+          <span class="hero-line hero-line--sub" id="typewriter-grade"></span>
+        </h1>
+
+        <p class="hero-desc animated">
+          No crazy talent, no 200 IQ, no secret tech genius arc.
+          I just like messing around with technology, breaking things,
+          fixing them, and occasionally wondering why the code worked
+          five minutes ago but doesn't anymore.
+        </p>
+
+        <div class="hero-btns animated">
+          <a href="#tinkering" class="btn btn-primary">
+            See my stuff
+            <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Say hello</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-label">About</div>
+        <h2 class="section-heading">
+          A <span class="text-gradient">brief introduction</span>.
+        </h2>
+        <div class="about-header">
+          <div class="avatar-wrapper">
+            <div class="avatar-frame">
+              <div class="avatar-img">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="38" r="18" stroke="currentColor" stroke-width="2"/>
+                  <path d="M22 88c0-15.46 12.54-28 28-28s28 12.54 28 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="avatar-label">add photo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-grid">
+          <div class="section-col">
+            <p>
+              My name is Minh Phát. I'm in Grade 11 at a regular high school.
+              I don't have any special certifications or fancy awards hanging
+              on my wall. Most days I'm just trying to survive math class.
+            </p>
+            <p>
+              But when I get home, I open my laptop and start building things.
+              Websites, small scripts, random experiments — anything that
+              catches my attention. Sometimes they work. Most times they
+              don't. That's the fun part.
+            </p>
+          </div>
+          <div class="section-col">
+            <p>
+              I'm fascinated by how technology works under the hood. Why does
+              this button make that happen? What happens between me typing a
+              URL and the page loading? These questions keep me up at night.
+            </p>
+            <p>
+              I'm not trying to be the next prodigy or get into some
+              prestigious university. I'm just a curious kid who genuinely
+              enjoys the process of creating things — even if half of it
+              is spent on Stack Overflow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stuff I do -->
+    <section id="stuff" class="section">
+      <div class="container">
+        <div class="section-label">Stuff I do</div>
+        <h2 class="section-heading">
+          Things I like <span class="text-gradient">messing with</span>.
+        </h2>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4>Web stuff</h4>
+            <div class="skill-tags">
+              <span>HTML / CSS</span><span>JavaScript</span><span>React</span>
+              <span>Tailwind</span><span>Node.js</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Playing with</h4>
+            <div class="skill-tags">
+              <span>Python</span><span>Linux</span><span>Git</span>
+              <span>VS Code</span><span>Figma</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Learning about</h4>
+            <div class="skill-tags">
+              <span>Networking</span><span>Cybersecurity</span>
+              <span>Databases</span><span>APIs</span><span>AI/ML</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Non-tech</h4>
+            <div class="skill-tags">
+              <span>Photography</span><span>Music</span>
+              <span>Reading</span><span>Gaming</span><span>Cooking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tinkering — small projects -->
+    <section id="tinkering" class="section">
+      <div class="container">
+        <div class="section-label">Tinkering</div>
+        <h2 class="section-heading">
+          Stuff I've <span class="text-gradient">built for fun</span>.
+        </h2>
+
+        <div class="work-grid">
+          <a href="#" class="work-card work-card--updating">
+            <div class="work-card-top">
+              <div class="work-card-header">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+                <h3>project-name</h3>
+              </div>
+              <p>A project description will go here once I finish setting things up.</p>
+            </div>
+            <div class="work-card-tags">
+              <span>HTML</span><span>CSS</span>
+            </div>
+            <div class="updating-badge">đang cập nhật</div>
+          </a>
+
+          <a href="#" class="work-card work-card--updating">
+            <div class="work-card-top">
+              <div class="work-card-header">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+                <h3>project-name</h3>
+              </div>
+              <p>Another project that I'm still working on. Check back soon for updates.</p>
+            </div>
+            <div class="work-card-tags">
+              <span>JavaScript</span><span>React</span>
+            </div>
+            <div class="updating-badge">đang cập nhật</div>
+          </a>
+
+          <a href="#" class="work-card work-card--updating">
+            <div class="work-card-top">
+              <div class="work-card-header">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+                <h3>project-name</h3>
+              </div>
+              <p>Coming soon. I'm still figuring out the best approach for this one.</p>
+            </div>
+            <div class="work-card-tags">
+              <span>Python</span><span>Flask</span>
+            </div>
+            <div class="updating-badge">đang cập nhật</div>
+          </a>
+
+          <a href="#" class="work-card work-card--updating">
+            <div class="work-card-top">
+              <div class="work-card-header">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+                <h3>project-name</h3>
+              </div>
+              <p>Yet another experiment. Will push the code once it's ready for public viewing.</p>
+            </div>
+            <div class="work-card-tags">
+              <span>Node.js</span><span>Express</span>
+            </div>
+            <div class="updating-badge">đang cập nhật</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-label">Contact</div>
+        <h2 class="section-heading">
+          Wanna <span class="text-gradient">chat?</span>
+        </h2>
+        <p class="contact-desc">
+          If you're also into tech, building random things, or just want
+          to talk about why CSS is simultaneously the best and worst thing
+          ever — hit me up.
+        </p>
+        <div class="contact-btns">
+          <a href="mailto:minhphat@example.com" class="btn btn-primary">
+            Send Email
+            <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="#" class="btn btn-secondary">GitHub</a>
+          <a href="#" class="btn btn-secondary">Discord</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://facebook.com/" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+            <span>Facebook</span>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://tiktok.com/" target="_blank" rel="noopener" class="social-link" aria-label="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+            </svg>
+            <span>TikTok</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Minh Phát. Just a kid messing around with computers.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
