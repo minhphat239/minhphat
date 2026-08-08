@@ -512,45 +512,99 @@ a {
 }
 
 /* ============================================================
-   SKILLS / STUFF SECTION
+   BENTO GRID — stuff I do
    ============================================================ */
-.skills-grid {
+.bento-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px 48px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 18px;
 }
 
-.skill-group h4 {
-  font-size: 13px;
+.bento-card {
+  background: rgba(255, 255, 255, 0.018);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  grid-column: span 1;
+  transition: border-color 0.3s ease, background 0.3s ease, transform 0.25s var(--ease-out-expo);
+}
+
+.bento-card:hover {
+  border-color: var(--border-medium);
+  background: rgba(255, 255, 255, 0.03);
+  transform: translateY(-2px);
+}
+
+.bento-card--lg {
+  grid-column: span 2;
+}
+
+.bento-label {
+  font-size: 12px;
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 16px;
+  letter-spacing: 0.1em;
+  margin-bottom: 18px;
 }
 
-.skill-tags {
+.bento-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.skill-tags span {
-  display: inline-block;
-  padding: 7px 14px;
+.bento-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
   font-size: 13px;
   font-weight: 500;
   color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.025);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-pill);
-  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.skill-tags span:hover {
+.bento-tag:hover {
   border-color: var(--border-medium);
   background: rgba(255, 255, 255, 0.06);
   color: var(--text-primary);
+}
+
+.bento-tag svg {
+  width: 14px;
+  height: 14px;
+  opacity: 0.45;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease;
+}
+
+.bento-tag:hover svg {
+  opacity: 0.8;
+}
+
+.bento-tag--pro {
+  border-color: rgba(13, 112, 48, 0.25);
+  background: rgba(13, 112, 48, 0.06);
+}
+
+.bento-tag--pro:hover {
+  border-color: var(--accent);
+  background: rgba(13, 112, 48, 0.12);
+  box-shadow: 0 0 16px rgba(13, 112, 48, 0.08);
+}
+
+.bento-tag--learning {
+  border-color: rgba(13, 112, 48, 0.12);
+  border-style: dashed;
+}
+
+.bento-tag--learning:hover {
+  border-color: var(--accent);
+  border-style: solid;
 }
 
 /* ============================================================
@@ -765,10 +819,17 @@ a {
   }
 
   .section-grid,
-  .skills-grid,
   .work-grid,
   .about-split {
     grid-template-columns: 1fr;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bento-card--lg {
+    grid-column: span 1;
   }
 
   .about-split {
@@ -820,6 +881,10 @@ a {
 
   .brand-name {
     display: none;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr;
   }
 
   .section-heading {
