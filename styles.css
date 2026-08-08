@@ -2,8 +2,8 @@
    CSS CUSTOM PROPERTIES
    ============================================================ */
 :root {
-  --bg-primary: #07090D;
-  --bg-nav: rgba(7, 9, 13, 0.75);
+  --bg-primary: #0f1118;
+  --bg-nav: rgba(15, 17, 24, 0.8);
 
   --border-subtle: rgba(255, 255, 255, 0.06);
   --border-medium: rgba(255, 255, 255, 0.10);
@@ -517,8 +517,8 @@ a {
 }
 
 .bento-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 24px;
   padding: 28px;
   transition: border-color 0.3s ease, background 0.3s ease, transform 0.25s var(--ease-out-expo);
@@ -612,7 +612,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   padding: 28px;
-  background: rgba(255, 255, 255, 0.015);
+  background: rgba(255, 255, 255, 0.025);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s var(--ease-out-expo);
