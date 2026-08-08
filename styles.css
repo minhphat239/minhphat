@@ -107,10 +107,6 @@ a {
   height: 100%;
   z-index: 1;
   pointer-events: none;
-}
-
-/* Hide bg-grid div since grid is now on body */
-.bg-grid {
   display: none;
 }
 
