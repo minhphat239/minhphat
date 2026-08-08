@@ -2,8 +2,8 @@
    CSS CUSTOM PROPERTIES
    ============================================================ */
 :root {
-  --bg-primary: #0f1118;
-  --bg-nav: rgba(15, 17, 24, 0.8);
+  --bg-primary: #050508;
+  --bg-nav: rgba(5, 5, 8, 0.8);
 
   --border-subtle: rgba(255, 255, 255, 0.06);
   --border-medium: rgba(255, 255, 255, 0.10);
@@ -59,16 +59,16 @@ body {
   background-image:
     radial-gradient(
       circle at 50% 25%,
-      rgba(10, 90, 40, 0.08),
+      rgba(13, 112, 48, 0.07),
       transparent 45%
     ),
     linear-gradient(
-      rgba(255, 255, 255, var(--grid-opacity)) 1px,
+      rgba(13, 112, 48, 0.12) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(255, 255, 255, var(--grid-opacity)) 1px,
+      rgba(13, 112, 48, 0.12) 1px,
       transparent 1px
     );
   background-size:
@@ -521,8 +521,8 @@ a {
 }
 
 .bento-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 24px;
   padding: 28px;
   transition: border-color 0.3s ease, background 0.3s ease, transform 0.25s var(--ease-out-expo);
