@@ -518,25 +518,33 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 18px;
+  align-items: start;
 }
 
 .bento-card {
-  background: rgba(255, 255, 255, 0.018);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 26px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 28px;
   grid-column: span 1;
+  height: fit-content;
   transition: border-color 0.3s ease, background 0.3s ease, transform 0.25s var(--ease-out-expo);
 }
 
 .bento-card:hover {
-  border-color: var(--border-medium);
-  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.045);
   transform: translateY(-2px);
 }
 
 .bento-card--lg {
   grid-column: span 2;
+}
+
+.bento-card--lg .bento-tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }
 
 .bento-label {
