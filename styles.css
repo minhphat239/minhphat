@@ -518,7 +518,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 18px;
-  align-items: start;
 }
 
 .bento-card {
@@ -526,7 +525,6 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 24px;
   padding: 28px;
-  height: fit-content;
   transition: border-color 0.3s ease, background 0.3s ease, transform 0.25s var(--ease-out-expo);
 }
 
