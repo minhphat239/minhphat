@@ -857,6 +857,11 @@ a {
     justify-content: center;
   }
 
+  .btn-icon {
+    width: 46px;
+    flex-shrink: 0;
+  }
+
   .nav {
     top: 12px;
   }
