@@ -32,7 +32,7 @@
 
   // ── SCROLL REVEAL ──
   function initScrollReveal() {
-    var targets = document.querySelectorAll('.section-label, .section-heading, .section-grid, .about-left, .about-right, .bento-card, .work-grid, .work-card, .contact-desc, .contact-btns, .social-links');
+    var targets = document.querySelectorAll('.section-label, .section-heading, .section-grid, .about-left, .about-right, .bento-card, .work-grid, .work-card, .contact-desc, .contact-row');
 
     if (!('IntersectionObserver' in window)) {
       for (var i = 0; i < targets.length; i++) {
