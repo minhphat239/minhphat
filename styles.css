@@ -10,7 +10,7 @@
   --border-bright: rgba(255, 255, 255, 0.16);
 
   --text-primary: #FFFFFF;
-  --text-secondary: #A1A5B0;
+  --text-secondary: #B8BCC4;
   --text-muted: #5B5F6B;
 
   --accent: #0d7030;
@@ -387,15 +387,25 @@ a {
 }
 
 /* ============================================================
-   AVATAR
+   ABOUT SPLIT LAYOUT
    ============================================================ */
-.about-header {
-  margin-bottom: 40px;
+.about-split {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 64px;
+  align-items: start;
 }
 
+.about-left .section-heading {
+  margin-bottom: 28px;
+}
+
+/* ============================================================
+   AVATAR
+   ============================================================ */
 .avatar-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .avatar-frame {
@@ -403,13 +413,15 @@ a {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 2px solid var(--border-medium);
-  padding: 4px;
-  transition: border-color 0.3s ease;
+  border: 2px solid var(--accent);
+  padding: 3px;
+  box-shadow: 0 0 32px rgba(13, 112, 48, 0.18);
+  transition: box-shadow 0.4s ease, border-color 0.3s ease;
 }
 
 .avatar-frame:hover {
-  border-color: var(--accent);
+  border-color: var(--accent-light);
+  box-shadow: 0 0 48px rgba(13, 112, 48, 0.3);
 }
 
 .avatar-img {
@@ -418,7 +430,6 @@ a {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.03);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--text-muted);
@@ -437,13 +448,23 @@ a {
   opacity: 0.5;
 }
 
-.avatar-label {
-  font-size: 10px;
+/* ============================================================
+   ABOUT RIGHT — text content
+   ============================================================ */
+.about-right p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 22px;
+}
+
+.about-right p:last-child {
+  margin-bottom: 0;
+}
+
+.text-highlight {
+  color: var(--accent-light);
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-top: 4px;
-  opacity: 0.4;
 }
 
 /* ============================================================
@@ -745,8 +766,17 @@ a {
 
   .section-grid,
   .skills-grid,
-  .work-grid {
+  .work-grid,
+  .about-split {
     grid-template-columns: 1fr;
+  }
+
+  .about-split {
+    gap: 36px;
+  }
+
+  .avatar-wrapper {
+    justify-content: center;
   }
 
   .status-badge {
