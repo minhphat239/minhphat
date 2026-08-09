@@ -619,6 +619,7 @@ a {
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
+  cursor: pointer;
   transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s var(--ease-out-expo);
 }
 
@@ -696,6 +697,37 @@ a {
   padding: 4px 10px;
   background: rgba(13, 112, 48, 0.1);
   border-radius: var(--radius-pill);
+}
+
+/* ============================================================
+   WORK CARD LINKS (GitHub + Website icons)
+   ============================================================ */
+.work-card-links {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  gap: 6px;
+  z-index: 1;
+}
+
+.work-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.work-link-icon:hover {
+  color: var(--accent-light);
+  background: rgba(13, 112, 48, 0.1);
+  border-color: var(--accent);
 }
 
 /* ============================================================
